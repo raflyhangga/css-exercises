@@ -5,6 +5,8 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -16,6 +18,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: .5rem 1rem;
 }
 
 input {
@@ -24,4 +27,75 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+
+/* Header Starts */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.header .left-links, .header .right-links {
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  gap: 16px;
+  padding: 0;
+}
+
+.header .left-links li a, .header .right-links li a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.685);
+}
+
+/* Main Content */
+/* .main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.content img {
+  margin: 0 auto;
+}
+
+.content .input {
+  margin: 0 auto;
+} 
+
+.content .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Footer */
+
+.footer {
+  display: flex;
+  background-color: #eee;
+  justify-content: space-between;
+  padding: 2px 30px;
+}
+
+.footer .left-links, .footer .right-links {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+}
+
+.footer .left-links a, .footer .right-links a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.685);
 }
